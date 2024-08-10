@@ -8,7 +8,8 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <FavoritesProvider>
-        <App /></FavoritesProvider>
+        <App />
+      </FavoritesProvider>
     </BrowserRouter>
   </StrictMode>,
 )
