@@ -2,10 +2,11 @@ import React, { createContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate} from 'react-router-dom';
 
+
 export const FavoritesContext = createContext();
 
 export const FavoritesProvider = ({ children }) => {
-   
+    
     const [favorites, setFavorites] = useState([]);
     const [currentWeather, setCurrentWeather] = useState(null);
     const [forecast, setForecast] = useState(null);
@@ -37,10 +38,12 @@ export const FavoritesProvider = ({ children }) => {
         if (isDuplicate) {
             alert(`${city} is already in your favorites.`);
             return; 
-        }
+        }else{
         const newFavorites = [...favorites, city];
         setFavorites(newFavorites);
         localStorage.setItem('favorites', JSON.stringify(newFavorites));
+            alert(`${city} added to Favorites`);
+        }
     };
     
 
