@@ -4,13 +4,8 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      plugins: [
-        nodeResolve({
-          browser: true, // This ensures that the plugin is used in a browser context
-        }),
-      ],
-    },
-  },
+   server: {
+    host: '0.0.0.0',
+    port: 5173
+  }
 });
