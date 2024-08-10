@@ -1,0 +1,22 @@
+button{
+  margin: 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(56, 177, 114);
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Define the dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+.weatherapp{
+  margin: 0;
+  
+}
