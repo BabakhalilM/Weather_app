@@ -4,7 +4,7 @@ const WeatherDisplay = ({ currentWeather, forecast, location, isCelsius,onAddFav
     function getDayName(dateString) {
         const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
         const date = new Date(dateString);
-        const dayIndex = date.getDay(); // Returns a number between 0 (Sunday) and 6 (Saturday)
+        const dayIndex = date.getDay(); 
     
         return daysOfWeek[dayIndex];
     }
@@ -43,7 +43,7 @@ const WeatherDisplay = ({ currentWeather, forecast, location, isCelsius,onAddFav
                         <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" }}>
                             <select
                                 style={{ width: "100%", padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }}
-                                // onChange={(e) => handleHourChange(e.target.value)}
+                                
                             >
                                 {day.hour.map((hour, index) => (
                                     <option key={index} value={hour.time}>

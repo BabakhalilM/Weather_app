@@ -1,16 +1,19 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
 import Dashboard from './componets/Dashboard'
+import { Route, Routes } from 'react-router-dom';
+import Favorites from './componets/Favorites';
+import Search from './componets/Search';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <div className='weatherapp'>
-    <Dashboard/>
-    </div>
+    <>
+    <Search/>
+    <Routes>
+      <Route path="/" element={<Dashboard/>} />
+      <Route path="/favorites" element={<Favorites/>}/>
+    </Routes>
+    {/* <Dashboard/> */}
+    </>
   )
 }
 
