@@ -42,11 +42,15 @@ const Search = () => {
                 <div style={{ margin: "auto" }}>
                     <div >
                         <input
-                            type="text"
-                            height="30px"
+                        type="text"
+                        style={{
+                            width: '200px',
+                            height: '35px',
+                            borderRadius: '10px'
+                        }}
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
-                            placeholder="Enter city"
+                            placeholder="Enter City Name"
                         />
                         <button style={{ margin: "5px" }} onClick={handleSearch}>Search</button>
                     </div>

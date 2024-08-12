@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-
+import './Dashboard.css'
 import WeatherDisplay from './weather';
 import { FavoritesContext } from './ContextApi';
 

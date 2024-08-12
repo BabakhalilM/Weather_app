@@ -7,16 +7,20 @@ button{
   background-color: rgb(56, 177, 114);
 }
 .light-mode {
-  background-color: white;
   color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://i.pinimg.com/564x/7b/2e/24/7b2e241c1659b26d9d0c0700cf88bdce.jpg);
 }
 
-/* Define the dark mode styles */
 .dark-mode {
-  background-color: #121212;
   color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://i.pinimg.com/564x/ea/d0/cb/ead0cb2fd12aff988b27f69840ab98c4.jpg);
 }
-.weatherapp{
+body{
   margin: 0;
-  
 }
