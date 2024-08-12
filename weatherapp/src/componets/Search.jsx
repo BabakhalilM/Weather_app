@@ -23,6 +23,7 @@ const Search = () => {
         if (isDarkMode) {
             root.classList.add('dark-mode');
             root.classList.remove('light-mode');
+            // root.style.backgroundImage='url(https://i.pinimg.com/564x/ea/d0/cb/ead0cb2fd12aff988b27f69840ab98c4.jpg)'
         } else {
             root.classList.add('light-mode');
             root.classList.remove('dark-mode');
@@ -58,7 +59,7 @@ const Search = () => {
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 'auto' }}>
                     <Link to={"/favorites"}>
-                        <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} class="material-symbols-outlined">
+                        <span style={{color:"white", display: 'flex', alignItems: 'center', justifyContent: 'center' }} class="material-symbols-outlined">
                             favorite
                         </span>
                     </Link>
